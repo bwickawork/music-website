@@ -25,7 +25,7 @@ export default function App() {
   return (
     <>
       <div style={{ maxWidth: '1160px', margin: '0 auto', padding: '0 20px', width: '100%' }}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Nav />
           <Banner />
           <Route path="/about" exact> <About /> </Route>
