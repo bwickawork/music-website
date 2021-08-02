@@ -7,7 +7,7 @@ import { Section } from "../../components/section/Section";
 import NewsList from "../../components/news-list/NewsList";
 import image from '../../assets/img/piano.jpeg';
 import FeaturedSection from "../../components/section/FeaturedSection";
- 
+  
 import ContactCard from "../../components/contact-card/ContactCard";
 
 const HomeScreen = () => {
