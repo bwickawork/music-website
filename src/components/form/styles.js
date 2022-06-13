@@ -18,9 +18,10 @@ export const Row = styled.div`
 `;
 
 export const Label = styled.label`
-  color: #6b7c93;
+  font-family: 'Roboto Mono';
+  color: #000;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: .43px;
   line-height: 26px;
   -webkit-tap-highlight-color: transparent;
@@ -30,9 +31,9 @@ export const Label = styled.label`
   transition: color .1s ease-out;
 
   @media (min-width: 670px) {
-    color: #424770;
-    font-size: 17px;
-    font-weight: 600;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
     letter-spacing: normal;
     line-height: 26px;
     margin-right: 20px;
@@ -46,9 +47,10 @@ export const Label = styled.label`
 `;
 
 export const LabelTextArea = styled.label`
-  color: #6b7c93;
+  font-family: 'Roboto Mono';
+  color: #000;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: .43px;
   line-height: 26px;
   -webkit-tap-highlight-color: transparent;
@@ -62,9 +64,9 @@ export const LabelTextArea = styled.label`
   padding-top: 7px;
 
   @media (min-width: 670px) {
-    color: #424770;
-    font-size: 17px;
-    font-weight: 600;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
     letter-spacing: normal;
     line-height: 26px;
     margin-right: 20px;
@@ -84,8 +86,8 @@ export const Input = styled.input`
   outline: none;
   width: 100%;
   border-radius: 4px;
-  color: #32325d;
-  font-weight: 500;
+  color: #000;
+  font-weight: 300;
   font-size: 17px;
   line-height: 26px;
   padding: 5px 20px 8px 0;
@@ -96,7 +98,7 @@ export const Input = styled.input`
     sans-serif;
 
   @media (min-width: 670px) {
-    background-color: #f6f9fc;
+    background-color: #f7f7f7;
     padding: 5px 20px 8px 13px;
     -webkit-box-flex: 68%;
     -ms-flex: 68%;
@@ -112,8 +114,8 @@ export const TextArea = styled.textarea`
   outline: none;
   width: 100%;
   border-radius: 4px;
-  color: #32325d;
-  font-weight: 400;
+  color: #000;
+  font-weight: 300;
   font-size: 17px;
   line-height: 26px;
   padding: 5px 20px 8px 0;
@@ -124,7 +126,7 @@ export const TextArea = styled.textarea`
     sans-serif;
 
   @media (min-width: 670px) {
-    background-color: #f6f9fc;
+    background-color: #f7f7f7;
     padding: 5px 20px 8px 13px;
     -webkit-box-flex: 68%;
     -ms-flex: 68%;

@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 85%;
-  width: 85%;
-  height: 500px;
   border-radius: 4px;
   overflow: hidden;
+  margin-right: 32px;
 `;
 
 export const DateContainer = styled.div`
@@ -17,6 +15,7 @@ export const DateContainer = styled.div`
   margin-top: 40px;
   margin-bottom: 30px;
   grid-column: 1;
+
   @media (min-width: 670px) {
     padding-right: 70px;
     position: -webkit-sticky;
@@ -28,8 +27,9 @@ export const DateContainer = styled.div`
 `;
 
 export const Date = styled.p`
+  font-family: 
   font-size: 14px;
-  color: #525f7f;
+  color: #000;
   margin-bottom: 16px;
   white-space: nowrap;
   line-height: 28px;
@@ -38,28 +38,26 @@ export const Date = styled.p`
   letter-spacing: .025em;
 `;
 
-export const Title = styled.strong`
-  margin-bottom: 15px;
-  font-weight: 600;
-  color: #32325d;
+export const Title = styled.h3`
+  font-family: 'Roboto';
+  margin-top: 16px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
   width: 100%;
 `;
 
 export const TextContainer = styled.div`
-  font-weight: 400;
-  grid-column: 1/-1;
-  display: inline-flex;
+  width: 100%;
+  font-family: 'Roboto';
+  font-weight: 300;
+  display: flex;
   flex-direction: column;
-  flex: 2;
-  font-size: 19px;
+  font-size: 15px;
   line-height: 32px;
-  color: #525f7f;
+  color: #000;
   max-width: 70%;
-
-  @media (min-width: 880px) {
-    grid-column: 2/-1;
-    min-width: 600px;
-  }
 `;
 
 export const Divider = styled.div`

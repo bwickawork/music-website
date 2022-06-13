@@ -24,15 +24,15 @@ const ContactScreen = () => {
               </Form>
             </Card>
           </LeftColumn>
-          <RightColumn>
+          {/* <RightColumn>
             <RightContent>
-              <RightTitle>Studio contact information:</RightTitle>
+              <RightTitle></RightTitle>
               <RightList>
                 <li>Test</li>
                 <li>Test</li>
               </RightList>
             </RightContent>
-          </RightColumn>
+          </RightColumn> */}
         </FormContainer>
       </FormSection>
     </ContainerLg>

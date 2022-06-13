@@ -8,11 +8,8 @@ import {
   useParams
 } from "react-router-dom";
 
-import Banner from "./components/nav/Banner";
-
 import Nav from "./components/nav/Nav";
 import HomeScreen from "./screens/Home/HomeScreen";
-import Footer from "./components/footer/Footer";
 
 import './styles/App.css';
 import NewsScreen from "./screens/News/NewsScreen";
@@ -20,21 +17,49 @@ import Article0Screen from "./screens/News/Articles/Article0Screen";
 import AboutScreen from "./screens/About/AboutScreen";
 import VideosScreen from "./screens/Videos/VideosScreen";
 import ContactScreen from "./screens/Contact/ContactScreen";
+import ArticleAwardsScreen from "./screens/News/Articles/ArticleAwardsScreen";
+import Video2022Screen from "./screens/Videos/Subpages/Video2022Screen";
+import Video2021Screen from "./screens/Videos/Subpages/Video2021Screen";
+import Video2020Screen from "./screens/Videos/Subpages/Video2020Screen";
+import Video2019Screen from "./screens/Videos/Subpages/Video2019Screen";
+import VideoMasterScreen from "./screens/Videos/Subpages/VideoMasterScreen";
 
 export default function App() {
   return (
     <>
-      <div style={{ maxWidth: '1160px', margin: '0 auto', padding: '0 20px', width: '100%' }}>
+      <div style={{ margin: '0 auto', padding: '0 0px', width: '100%' }}>
         <Router basename={process.env.PUBLIC_URL}>
           <Nav />
-          <Banner />
-          <Route path="/about" exact> <About /> </Route>
-          <Route path="/news" exact> <News /> </Route>
-          <Route path="/news/0" exact>
+          {/* <Banner /> */}
+          <Route path="/about" exact>
+            <About />
+          </Route>
+          <Route path="/news" exact>
+            <News />
+          </Route>
+          <Route path="/news/seniors" exact>
             <Article0Screen />
+          </Route>
+          <Route path="/news/awards" exact>
+            <ArticleAwardsScreen />
           </Route>
           <Route path="/videos" exact>
             <Videos />
+          </Route>
+          <Route path="/videos/recital22" exact>
+            <Video2022Screen />
+          </Route>
+          <Route path="/videos/recital21" exact>
+            <Video2021Screen />
+          </Route>
+          <Route path="/videos/recital20" exact>
+            <Video2020Screen />
+          </Route>
+          <Route path="/videos/recital19" exact>
+            <Video2019Screen />
+          </Route>
+          <Route path="/videos/master-class" exact>
+            <VideoMasterScreen />
           </Route>
           <Route path="/contact" exact>
             <Contact />
@@ -44,8 +69,6 @@ export default function App() {
           </Route>
         </Router>
       </div>
-      <Footer>
-      </Footer>
     </>
   );
 }

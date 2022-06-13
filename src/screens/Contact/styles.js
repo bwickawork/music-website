@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../styles/theme";
 
 export const FormSection = styled.section`
   max-height: 1200px;
@@ -65,8 +66,8 @@ export const LeftColumn = styled.div`
 
 export const Card = styled.div`
   border-radius: 4px;
-  -webkit-box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(0 0 0 / 30%), 0 -18px 60px -10px rgb(0 0 0 / 3%);
-  box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(0 0 0 / 30%), 0 -18px 60px -10px rgb(0 0 0 / 3%);
+  /*-webkit-box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(0 0 0 / 30%), 0 -18px 60px -10px rgb(0 0 0 / 3%);
+  box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(0 0 0 / 30%), 0 -18px 60px -10px rgb(0 0 0 / 3%);*/
   max-width: 645px;
   background: #fff;
   margin: 0 auto;
@@ -79,6 +80,7 @@ export const Card = styled.div`
 export const Form = styled.div`
   padding: 10px 10px 13px 15px;
   padding: 0;
+
 
   @media (min-width: 670px) {
       padding: 10px 18px 20px 24px;
@@ -130,7 +132,7 @@ export const SubmitButton = styled.input`
   cursor: pointer;
   font-family: inherit;
   color: #fff;
-  background: #6772e5;
+  background: ${theme.primary};
 
   &:hover {
     color: #fff;
@@ -153,7 +155,7 @@ export const RightContent = styled.div`
   flex-direction: column;
 
   @media (min-width: 880px) {
-      padding-top: 200px;
+      padding-top: 50px;
   }
 
   @media (min-width: 670px) {
@@ -168,9 +170,10 @@ export const RightContent = styled.div`
 `;
 
 export const RightTitle = styled.p`
-  color: #f9fbfd;
+  font-family: 'Roboto Mono';
+  color: #000;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 36px;
 
   @media (min-width: 880px){
@@ -186,7 +189,7 @@ export const RightList = styled.ul`
   padding: 0;
 
   li {
-    color: #fff;
+    color: #000;
     font-size: 17px;
     font-weight: 400;
     line-height: 25px;

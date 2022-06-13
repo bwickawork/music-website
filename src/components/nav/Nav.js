@@ -1,6 +1,7 @@
-import React from "react";
-import { HeaderContainer, HeaderBody, NavContainer, Logo, NavList } from "./styles";
+import React, { useState } from "react";
+import { HeaderContainer, HeaderBody, NavContainer, Logo, NavList, NavMenuIconContainer, NavMenuItems } from "./styles";
 import { NavLink } from "react-router-dom";
+import { MdMenu, MdClose } from "react-icons/md";
 
 const Nav = () => {
   const links = [
@@ -11,11 +12,13 @@ const Nav = () => {
     { name: "Contact", path: "/contact" },
   ];
 
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <HeaderContainer>
       <HeaderBody>
         <NavContainer>
-          <Logo>young robbins music</Logo>
+          <Logo>Young Robbins Music</Logo>
           <div>
             <NavList>
               {links.map((link, index) => (
@@ -25,9 +28,21 @@ const Nav = () => {
               ))}
             </NavList>
           </div>
+          <NavMenuIconContainer onClick={() => setShowMenu(!showMenu)}>
+            {showMenu ? <MdClose size={24} /> : <MdMenu size={24} />}
+          </NavMenuIconContainer>
         </NavContainer>
+        {showMenu &&
+          <NavMenuItems>
+            {links.map((link, index) => (
+              <NavLink key={index} to={link.path} exact activeClassName="current" onClick={() => setShowMenu(false)}>
+                <li>{link.name}</li>
+              </NavLink>
+            ))}
+          </NavMenuItems>
+        }
       </HeaderBody>
-      <div style={{width: '100%', height: '1.5px', backgroundColor: 'rgba(170, 183, 196, 0.125)', margin: '1px auto', maxWidth: '1000px'}} />
+      {/* <div style={{width: '100%', height: '1.5px', backgroundColor: 'rgba(170, 183, 196, 0.125)', margin: '1px auto', maxWidth: '1000px'}} /> */}
     </HeaderContainer>
   );
 };

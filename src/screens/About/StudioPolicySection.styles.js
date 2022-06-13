@@ -3,36 +3,29 @@ import styled from "styled-components";
 export const Container = styled.section`
   position: relative;
   width: 100%;
-  padding: 30px 0 80px;
+  padding: 20px 0 80px;
 `;
 
 export const Content = styled.div`
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 0px;
   width: 100%;
   max-width: 1040px;
 `;
 
 export const Header = styled.div`
-  text-align: center;
-  margin: 40px 0 45px;
-
-  @media (min-width: 670px) {
-    margin: 40px 0 90px;
-  }
-
-  @media (min-width: 880px){
-    margin: 40px 0 80px;
-  }
+  text-align: left;
+  padding-bottom: 36px;
 `;
 
 export const Title = styled.h2`
+  font-family: 'Roboto Mono';
   font-size: 20px;
   line-height: 32px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: .025em;
-  color: #32325d;
+  color: #000;
 
   @media (min-width: 670px) {
     font-size: 21px;
@@ -41,10 +34,11 @@ export const Title = styled.h2`
 `;
 
 export const Subtitle = styled.h3`
-  font-weight: 400;
-  font-size: 19px;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
   line-height: 32px;
-  color: #525f7f;
+  color: #000;
 `;
 
 export const Groups = styled.div`
@@ -72,10 +66,12 @@ export const Groups = styled.div`
 `;
 
 export const ItemTitle = styled.h5`
-  font-weight: 600;
-  font-size: 19px;
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+  font-size: 16px;
   line-height: 32px;
-  color: #32325d;
+  letter-spacing: -1px;
+  color: #000;
   margin: 16px 0 0;
 `;
 
@@ -84,7 +80,9 @@ export const Image = styled.img`
 `;
 
 export const Checklist = styled.ul`
-  font-size: 15px;
+  font-family: 'Roboto'; 
+  font-size: 14px;
+  font-weight: 400;
   line-height: 22px;
   color: #6b7c93;
   margin: 16px 0 0;

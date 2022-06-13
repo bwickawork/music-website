@@ -1,18 +1,37 @@
 import React from "react";
-import { ArticleTitle, ArticleDescription
- } from "../../components/text/Text";
-import { ContainerLg } from "../../components/section/Section";
-import Video from "../../components/video/Video";
-
+import { ArticleTitle } from "../../components/text/Text";
+import Footer from "../../components/footer/Footer";
+import { VideoContainer, VideoItemContainer, VideoItemPlaceholder, VideoRow, VideoThumbnail, VideoTitle, VideoSubtitle } from "./styles";
+import recital22 from '../../assets/img/recital2022.png';
+import recital21 from '../../assets/img/recital2021.png';
+import recital20 from '../../assets/img/recital2020.png';
+import recital19 from '../../assets/img/recital2019.png';
+import masterClass from '../../assets/img/masterclass.png';
 const VideosScreen = () => {
+
+  const VideoItem = ({ icon, title, subtitle, page }) => (
+    <VideoItemContainer to={`videos/${page}`}>
+      <VideoThumbnail src={icon}  />
+      <VideoTitle>{title}</VideoTitle>
+      <VideoSubtitle>{subtitle}</VideoSubtitle>
+    </VideoItemContainer>
+  );
+
   return (
-    <ContainerLg>
+    <VideoContainer>
       <ArticleTitle>Videos</ArticleTitle>
-      <ArticleDescription>Watch the most recent performances by our talented students.</ArticleDescription>
-      <Video id={'x7qrKYmHn0k'} date={'may 2020'} title={'Studio Recital (Part 1)'} text={'Studio recital live performance from May 2021. Part 1 is the Advanced level students.'} />
-      <Video id={'NPxl5dd6qZ4'} date={'may 2020'} title={'Studio Recital (Part 2)'} text={'Studio recital live performance from May 2021. Part 2 is the Intermediate level students.'} />
-      <Video id={'EIFNwQ-Amz0'} date={'may 2020'} title={'Studio Recital (Part 3)'} text={'Studio recital live performance from May 2021. Part 3 is the Beginner to Late Elementary level students.'} />
-    </ContainerLg>
+      <VideoRow>
+        <VideoItem icon={recital22} title={'2022 May Recital'} page={'recital22'} subtitle={'Studio recital on May 15, 2022 @ Museum of Making Music.'} />
+        <VideoItem icon={recital21} title={'2021 Spring Recital'} page={'recital21'} subtitle={'Studio recital in Spring 2021.'} />
+        <VideoItem icon={recital20} title={'2020 Online Summer Recital'} page={'recital20'} subtitle={'Our first ever online studio recital, Summer 2020.'} />
+      </VideoRow>
+      <VideoRow>
+        <VideoItem icon={masterClass} title={'Master Class w/ Maestro Lanzo Luconi'} page={'master-class'} subtitle={'September 2019, featuring instruction by Maestro Lanzo Luconi.'} />
+        <VideoItem icon={recital19} title={'2019 Fall Recital'} page={'recital19'} subtitle={'Studio recital on September 29, 2019 @ Escondido Public Library.'} />
+        <VideoItemPlaceholder />
+      </VideoRow>
+      <Footer />
+    </VideoContainer>
   );
 };
 

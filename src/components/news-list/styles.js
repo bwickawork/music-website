@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { theme } from '../../styles/theme';
 
 export const Container = styled.div`
   display: flex;
@@ -24,28 +23,31 @@ export const List = styled.div`
 
 export const ListText = styled(Link)`
   grid-column: 2;
+  font-family: 'Roboto';
   transition: color .1s;
-  font-weight: 600;
-  font-size: 19px;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 32px;
-  color: #32325d;
-  cursor: pointer;
+  color: #000;
+  cursor: ${props => props.isLink ? `pointer` : `text`};
 `;
 
-export const ListDate = styled.strong`
+export const ListDate = styled.h4`
+  font-family: 'Roboto Mono';
   grid-column: 1;
   display: block;
   position: relative;
   top: 6px;
   font-size: 15px;
-  color: ${theme.muted};
+  color: #000;
   text-transform: uppercase;
+  font-weight: 400;
 `;
 
 export const Divider = styled.hr`
   margin: 0;
   border: 0;
-  border-top: 1px solid #f1f4f7;
+  border-top: 1px solid #000;
   grid-column: 1/-1;
   width: 100%;
 `;

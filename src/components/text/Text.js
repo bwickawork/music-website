@@ -41,10 +41,11 @@ export const NewsTitle = styled.h1`
   padding-top: 80px;
 `;
 
-export const NewsLink = styled.strong`
+export const NewsLink = styled.span`
+font-family: 'Roboto';
 transition: color .1s;
-font-weight: 600;
-font-size: 19px;
+font-weight: 400;
+font-size: 16px;
 line-height: 32px;
 color: ${theme.primary};
 cursor: pointer;
@@ -53,24 +54,26 @@ align-items: center;
 `;
 
 export const ArticleTitle = styled.h1`
+  font-family: 'Roboto Mono'; 
   margin-bottom: 15px;
-  font-weight: 400;
-  font-size: 34px;
+  font-weight: 300;
+  font-size: 24px;
   line-height: 44px;
-  color: #32325d;
+  color: #000;
   padding-top: 80px;
   @media (min-width: 670px) {
-    font-size: 42px;
+    font-size: 32px;
     line-height: 52px;
   }
 `;
 
 export const ArticleDescription = styled.h2`
-  color: #525f7f;
+font-size: 16px;
+font-family: 'Roboto';
+color: #000;
+font-weight: 300;
   margin-bottom: 32px;
-  margin-top: 15px;
-  font-weight: 400;
-  font-size: 19px;
+  margin-top: 14px;
   line-height: 32px;
 `;
 
