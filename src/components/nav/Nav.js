@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { HeaderContainer, HeaderBody, NavContainer, Logo, NavList, NavMenuIconContainer, NavMenuItems } from "./styles";
 import { NavLink } from "react-router-dom";
 import { MdMenu, MdClose } from "react-icons/md";
+import { theme } from "../../styles/theme";
 
 const Nav = () => {
   const links = [
@@ -29,7 +30,7 @@ const Nav = () => {
             </NavList>
           </div>
           <NavMenuIconContainer onClick={() => setShowMenu(!showMenu)}>
-            {showMenu ? <MdClose size={24} /> : <MdMenu size={24} />}
+            {showMenu ? <MdClose size={24} color={theme.dark} /> : <MdMenu size={24} color={theme.dark} />}
           </NavMenuIconContainer>
         </NavContainer>
         {showMenu &&
