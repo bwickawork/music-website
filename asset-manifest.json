@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/music-website/static/css/main.bec62945.chunk.css",
+    "main.js": "/music-website/static/js/main.065be38c.chunk.js",
+    "main.js.map": "/music-website/static/js/main.065be38c.chunk.js.map",
+    "runtime-main.js": "/music-website/static/js/runtime-main.abd890cc.js",
+    "runtime-main.js.map": "/music-website/static/js/runtime-main.abd890cc.js.map",
+    "static/css/2.ed1298f3.chunk.css": "/music-website/static/css/2.ed1298f3.chunk.css",
+    "static/js/2.d04af838.chunk.js": "/music-website/static/js/2.d04af838.chunk.js",
+    "static/js/2.d04af838.chunk.js.map": "/music-website/static/js/2.d04af838.chunk.js.map",
+    "static/js/3.b019658f.chunk.js": "/music-website/static/js/3.b019658f.chunk.js",
+    "static/js/3.b019658f.chunk.js.map": "/music-website/static/js/3.b019658f.chunk.js.map",
+    "index.html": "/music-website/index.html",
+    "static/css/2.ed1298f3.chunk.css.map": "/music-website/static/css/2.ed1298f3.chunk.css.map",
+    "static/css/main.bec62945.chunk.css.map": "/music-website/static/css/main.bec62945.chunk.css.map",
+    "static/js/2.d04af838.chunk.js.LICENSE.txt": "/music-website/static/js/2.d04af838.chunk.js.LICENSE.txt",
+    "static/media/awards.jpeg": "/music-website/static/media/awards.9b0b33c8.jpeg",
+    "static/media/carousel1.7d45a8f1.jpeg": "/music-website/static/media/carousel1.7d45a8f1.jpeg",
+    "static/media/carousel2.7882b4a9.jpeg": "/music-website/static/media/carousel2.7882b4a9.jpeg",
+    "static/media/carousel3.eb0a70b7.jpeg": "/music-website/static/media/carousel3.eb0a70b7.jpeg",
+    "static/media/carousel4.87fe3ede.jpeg": "/music-website/static/media/carousel4.87fe3ede.jpeg",
+    "static/media/carousel5.4f064762.jpeg": "/music-website/static/media/carousel5.4f064762.jpeg",
+    "static/media/masterclass.2f5cecb1.png": "/music-website/static/media/masterclass.2f5cecb1.png",
+    "static/media/oceanside.jpeg": "/music-website/static/media/oceanside.aeeb94dd.jpeg",
+    "static/media/piano2.jpeg": "/music-website/static/media/piano2.d54309e9.jpeg",
+    "static/media/recital2019.b05bdd07.png": "/music-website/static/media/recital2019.b05bdd07.png",
+    "static/media/recital2020.749305ae.png": "/music-website/static/media/recital2020.749305ae.png",
+    "static/media/recital2021.7d95c0bc.png": "/music-website/static/media/recital2021.7d95c0bc.png",
+    "static/media/recital2022.a85b7c2f.png": "/music-website/static/media/recital2022.a85b7c2f.png",
+    "static/media/senior1.png": "/music-website/static/media/senior1.daf00ed8.png",
+    "static/media/senior2.jpg": "/music-website/static/media/senior2.cb965ac2.jpg",
+    "static/media/student.fad0a03c.png": "/music-website/static/media/student.fad0a03c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.abd890cc.js",
+    "static/css/2.ed1298f3.chunk.css",
+    "static/js/2.d04af838.chunk.js",
+    "static/css/main.bec62945.chunk.css",
+    "static/js/main.065be38c.chunk.js"
+  ]
+}
